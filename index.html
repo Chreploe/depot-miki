@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Depot Miki Balikpapan – Authentic Indonesian Breakfast Since Morning. Nasi Kuning, Soto Banjar, Bubur Ayam, Bakmi Ayam." />
+  <title>Depot Miki Balikpapan – Authentic Indonesian Breakfast</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🍚</span>
+        <span class="logo-text">Depot Miki</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link" id="link-home">Home</a></li>
+          <li><a href="#menu" class="nav-link" id="link-menu">Menu</a></li>
+          <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+          <li><a href="#location" class="nav-link" id="link-location">Location</a></li>
+          <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-food-bg">
+      <!-- Decorative food emoji circles -->
+      <span class="food-float f1">🍲</span>
+      <span class="food-float f2">🍜</span>
+      <span class="food-float f3">🍛</span>
+      <span class="food-float f4">🥘</span>
+      <span class="food-float f5">🍚</span>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline">✦ Authentic Indonesian Breakfast Since Morning ✦</p>
+      <h1 class="hero-title">Depot Miki<br><span>Balikpapan</span></h1>
+      <p class="hero-subtitle">Famous Indonesian Breakfast and Local Dishes</p>
+      <a href="#menu" class="btn btn-primary" id="hero-cta">View Menu</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span></span>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- ======================== ABOUT ======================== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">About Depot Miki</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="about-grid fade-in">
+        <div class="about-image-wrap">
+          <div class="about-image-placeholder">
+            <span class="placeholder-icon">🍽️</span>
+            <p>Serving Balikpapan<br>with Love & Flavor</p>
+          </div>
+          <div class="about-badge">
+            <span class="badge-icon">⏰</span>
+            <div>
+              <strong>Open Daily</strong>
+              <span>06:00 – 14:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-lead">
+            Depot Miki is a popular breakfast restaurant in Balikpapan known for authentic Indonesian dishes.
+          </p>
+          <p>
+            We serve traditional meals such as <strong>nasi kuning</strong>, <strong>soto banjar</strong>,
+            <strong>bubur ayam</strong>, and <strong>bakmi ayam</strong> — crafted with fresh ingredients
+            and generations of culinary tradition.
+          </p>
+          <p>
+            Our goal is to provide delicious food at affordable prices in a comfortable, welcoming environment.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🌿</span>
+              <span>Fresh Ingredients</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">💰</span>
+              <span>Affordable Prices</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">❤️</span>
+              <span>Made with Love</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== MENU ======================== -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">What We Serve</p>
+        <h2 class="section-title">Our Menu</h2>
+        <div class="divider"></div>
+        <p class="section-desc">Handcrafted Indonesian dishes made fresh every morning.</p>
+      </div>
+
+      <!-- Slider shell -->
+      <div class="menu-slider-wrap fade-in">
+        <!-- Prev button -->
+        <button class="slider-btn slider-prev" id="menuPrev" aria-label="Previous items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+
+        <!-- Viewport clips the strip -->
+        <div class="menu-slider-viewport" id="menuViewport">
+          <div class="menu-grid" id="menuGrid">
+
+            <!-- 1 -->
+            <article class="menu-card" id="menu-nasi-kuning">
+              <div class="card-image" style="background:linear-gradient(135deg,#f9c74f,#f4a226)">
+                <span class="card-emoji">🍚</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Nasi Kuning</h3><span class="card-badge">Popular</span>
+                </div>
+                <p class="card-desc">Traditional yellow rice served with seasoned chicken, egg, and sambal.</p>
+                <div class="card-footer"><span class="card-price">Rp 25.000</span><span class="card-tag">🌶️
+                    Classic</span></div>
+              </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="menu-card" id="menu-soto-banjar">
+              <div class="card-image" style="background:linear-gradient(135deg,#f8961e,#e07a1e)">
+                <span class="card-emoji">🍲</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Soto Banjar</h3><span class="card-badge">Signature</span>
+                </div>
+                <p class="card-desc">Aromatic chicken soup with traditional Banjar spices, vermicelli, and crispy
+                  shallots.</p>
+                <div class="card-footer"><span class="card-price">Rp 25.000</span><span class="card-tag">🥢 Soup</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="menu-card" id="menu-bubur-ayam">
+              <div class="card-image" style="background:linear-gradient(135deg,#ffb347,#d4762a)">
+                <span class="card-emoji">🥣</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Bubur Ayam</h3><span class="card-badge">Bestseller</span>
+                </div>
+                <p class="card-desc">Smooth rice porridge topped with shredded chicken, ginger broth, and crunchy
+                  crackers.</p>
+                <div class="card-footer"><span class="card-price">Rp 25.000</span><span class="card-tag">🌅
+                    Breakfast</span></div>
+              </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="menu-card" id="menu-bakmi-ayam">
+              <div class="card-image" style="background:linear-gradient(135deg,#e67c1b,#b5541a)">
+                <span class="card-emoji">🍜</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Bakmi Ayam</h3><span class="card-badge">Favorite</span>
+                </div>
+                <p class="card-desc">Tender egg noodles in a rich savory broth, topped with chicken and spring onion.
+                </p>
+                <div class="card-footer"><span class="card-price">Rp 25.000</span><span class="card-tag">🍝
+                    Noodle</span></div>
+              </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="menu-card" id="menu-nasi-goreng">
+              <div class="card-image" style="background:linear-gradient(135deg,#e63946,#c1121f)">
+                <span class="card-emoji">🍳</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Nasi Goreng</h3><span class="card-badge">Special</span>
+                </div>
+                <p class="card-desc">Wok-fried rice with egg, vegetables, and a blend of sweet and savoury sauces.</p>
+                <div class="card-footer"><span class="card-price">Rp 28.000</span><span class="card-tag">🔥 Hot</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="menu-card" id="menu-lontong-sayur">
+              <div class="card-image" style="background:linear-gradient(135deg,#52b788,#2d6a4f)">
+                <span class="card-emoji">🥗</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Lontong Sayur</h3><span class="card-badge">Local</span>
+                </div>
+                <p class="card-desc">Pressed rice cake in a rich coconut milk vegetable curry with boiled egg.</p>
+                <div class="card-footer"><span class="card-price">Rp 22.000</span><span class="card-tag">🥥 Curry</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 7 -->
+            <article class="menu-card" id="menu-mie-goreng">
+              <div class="card-image" style="background:linear-gradient(135deg,#f4a261,#e76f51)">
+                <span class="card-emoji">🍝</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Mie Goreng</h3><span class="card-badge">Spicy</span>
+                </div>
+                <p class="card-desc">Indonesian stir-fried noodles with egg, vegetables, and spicy sambal sauce.</p>
+                <div class="card-footer"><span class="card-price">Rp 27.000</span><span class="card-tag">🌶️
+                    Spicy</span></div>
+              </div>
+            </article>
+
+            <!-- 8 -->
+            <article class="menu-card" id="menu-ketoprak">
+              <div class="card-image" style="background:linear-gradient(135deg,#90e0ef,#0096c7)">
+                <span class="card-emoji">🥜</span>
+              </div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Ketoprak</h3><span class="card-badge">Vegan</span>
+                </div>
+                <p class="card-desc">Rice cake and tofu with bean sprouts, drizzled in rich peanut sauce and crackers.
+                </p>
+                <div class="card-footer"><span class="card-price">Rp 20.000</span><span class="card-tag">🥔 Vegan</span>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /menu-grid -->
+        </div><!-- /menu-slider-viewport -->
+
+        <!-- Next button -->
+        <button class="slider-btn slider-next" id="menuNext" aria-label="Next items">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+      </div><!-- /menu-slider-wrap -->
+
+      <!-- Dot indicators -->
+      <div class="slider-dots" id="sliderDots" role="group" aria-label="Menu page navigation"></div>
+
+    </div>
+  </section>
+
+  <!-- ======================== LOCATION ======================== -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Find Us</p>
+        <h2 class="section-title">Visit Us</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="location-grid fade-in">
+        <div class="location-info">
+          <div class="info-card">
+            <span class="info-icon">📍</span>
+            <div>
+              <h4>Address</h4>
+              <p>Jl. Jenderal Sudirman No. 93<br>Balikpapan, Kalimantan Timur</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">⏰</span>
+            <div>
+              <h4>Operating Hours</h4>
+              <p>Open Daily<br><strong>06:00 – 14:00 WIT</strong></p>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">📞</span>
+            <div>
+              <h4>Contact Us</h4>
+              <p>+62 811 5911 077</p>
+            </div>
+          </div>
+          <a href="https://maps.app.goo.gl/1h1tmMQgjfSS4dG68" target="_blank" rel="noopener" class="btn btn-primary"
+            id="directions-btn">
+            Get Directions
+          </a>
+        </div>
+        <div class="map-wrap">
+          <!-- Replace src with real Google Maps embed when available -->
+          <iframe class="map-iframe"
+            src="https://www.google.com/maps?q=Jl.+Jenderal+Sudirman+No.+93+Balikpapan&output=embed" loading="lazy"
+            allowfullscreen title="Depot Miki Balikpapan Location">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Contact Us</h2>
+        <div class="divider"></div>
+        <p class="section-desc">Have a question or reservation? Fill in your details and we'll open WhatsApp for you
+          instantly!</p>
+      </div>
+      <div class="contact-wrap fade-in">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 0812 3456 7890" autocomplete="tel" />
+            <span class="form-error" id="phoneError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-wa btn-full" id="submitBtn">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span class="btn-text">Chat on WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo">
+            <span class="logo-icon">🍚</span>
+            <span class="logo-text">Depot Miki</span>
+          </a>
+          <p class="footer-tagline">Authentic Indonesian Breakfast Since Morning</p>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h5>Visit Us</h5>
+          <p>📍 Jl. Jenderal Sudirman No. 93<br>Balikpapan</p>
+          <p>⏰ Open Daily: 06:00 – 14:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Depot Miki Balikpapan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/628115911077" class="wa-float" id="wa-float-btn" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat with Depot Miki on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="wa-float-label">Chat Now</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
