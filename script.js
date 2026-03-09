@@ -165,7 +165,7 @@ contactForm.addEventListener('submit', (e) => {
   const message = fields.message.el.value.trim();
 
   const waText = [
-    `Halo Depot Miki! 👋`,
+    `Halo Depot Miki!`,
     ``,
     `Nama  : ${name}`,
     `Telpon: ${phone}`,
