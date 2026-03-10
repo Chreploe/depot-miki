@@ -24,7 +24,6 @@
         <span class="logo-icon">🍚</span>
         <span class="logo-text">Depot Miki</span>
       </a>
-
       <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main Navigation">
         <ul class="nav-list">
           <li><a href="#home" class="nav-link" id="link-home">Home</a></li>
@@ -34,7 +33,6 @@
           <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
         </ul>
       </nav>
-
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -47,7 +45,6 @@
   <section class="hero" id="home">
     <div class="hero-overlay"></div>
     <div class="hero-food-bg">
-      <!-- Decorative food emoji circles -->
       <span class="food-float f1">🍲</span>
       <span class="food-float f2">🍜</span>
       <span class="food-float f3">🍛</span>
@@ -78,7 +75,7 @@
         <div class="about-image-wrap">
           <div class="about-image-placeholder">
             <span class="placeholder-icon">🍽️</span>
-            <p>Serving Balikpapan<br>with Love & Flavor</p>
+            <p>Serving Balikpapan<br>with Love &amp; Flavor</p>
           </div>
           <div class="about-badge">
             <span class="badge-icon">⏰</span>
@@ -89,30 +86,17 @@
           </div>
         </div>
         <div class="about-text">
-          <p class="about-lead">
-            Depot Miki is a popular breakfast restaurant in Balikpapan known for authentic Indonesian dishes.
+          <p class="about-lead">Depot Miki is a popular breakfast restaurant in Balikpapan known for authentic
+            Indonesian dishes.</p>
+          <p>We serve traditional meals such as <strong>nasi kuning</strong>, <strong>soto banjar</strong>,
+            <strong>bubur ayam</strong>, and <strong>bakmi ayam</strong> — crafted with fresh ingredients and
+            generations of culinary tradition.
           </p>
-          <p>
-            We serve traditional meals such as <strong>nasi kuning</strong>, <strong>soto banjar</strong>,
-            <strong>bubur ayam</strong>, and <strong>bakmi ayam</strong> — crafted with fresh ingredients
-            and generations of culinary tradition.
-          </p>
-          <p>
-            Our goal is to provide delicious food at affordable prices in a comfortable, welcoming environment.
-          </p>
+          <p>Our goal is to provide delicious food at affordable prices in a comfortable, welcoming environment.</p>
           <div class="about-highlights">
-            <div class="highlight-item">
-              <span class="highlight-icon">🌿</span>
-              <span>Fresh Ingredients</span>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">💰</span>
-              <span>Affordable Prices</span>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">❤️</span>
-              <span>Made with Love</span>
-            </div>
+            <div class="highlight-item"><span class="highlight-icon">🌿</span><span>Fresh Ingredients</span></div>
+            <div class="highlight-item"><span class="highlight-icon">💰</span><span>Affordable Prices</span></div>
+            <div class="highlight-item"><span class="highlight-icon">❤️</span><span>Made with Love</span></div>
           </div>
         </div>
       </div>
@@ -129,9 +113,16 @@
         <p class="section-desc">Handcrafted Indonesian dishes made fresh every morning.</p>
       </div>
 
+      <!-- Category filter tabs -->
+      <div class="menu-filter-tabs fade-in" id="menuFilterTabs" role="group" aria-label="Filter menu by category">
+        <button class="filter-tab active" data-cat="all" id="filter-all">🍽️ Semua</button>
+        <button class="filter-tab" data-cat="heavy" id="filter-heavy">🍚 Makanan Berat</button>
+        <button class="filter-tab" data-cat="snack" id="filter-snack">🍡 Camilan</button>
+        <button class="filter-tab" data-cat="drink" id="filter-drink">🥤 Minuman</button>
+      </div>
+
       <!-- Slider shell -->
-      <div class="menu-slider-wrap fade-in">
-        <!-- Prev button -->
+      <div class="menu-slider-wrap">
         <button class="slider-btn slider-prev" id="menuPrev" aria-label="Previous items">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
@@ -139,15 +130,13 @@
           </svg>
         </button>
 
-        <!-- Viewport clips the strip -->
         <div class="menu-slider-viewport" id="menuViewport">
           <div class="menu-grid" id="menuGrid">
 
-            <!-- 1 -->
-            <article class="menu-card" id="menu-nasi-kuning">
-              <div class="card-image" style="background:linear-gradient(135deg,#f9c74f,#f4a226)">
-                <span class="card-emoji">🍚</span>
-              </div>
+            <!-- ── HEAVY FOOD ─────────────────────── -->
+            <article class="menu-card" data-category="heavy" id="menu-nasi-kuning">
+              <div class="card-image" style="background:linear-gradient(135deg,#f9c74f,#f4a226)"><span
+                  class="card-emoji">🍚</span></div>
               <div class="card-body">
                 <div class="card-top">
                   <h3 class="card-title">Nasi Kuning</h3><span class="card-badge">Popular</span>
@@ -158,11 +147,9 @@
               </div>
             </article>
 
-            <!-- 2 -->
-            <article class="menu-card" id="menu-soto-banjar">
-              <div class="card-image" style="background:linear-gradient(135deg,#f8961e,#e07a1e)">
-                <span class="card-emoji">🍲</span>
-              </div>
+            <article class="menu-card" data-category="heavy" id="menu-soto-banjar">
+              <div class="card-image" style="background:linear-gradient(135deg,#f8961e,#e07a1e)"><span
+                  class="card-emoji">🍲</span></div>
               <div class="card-body">
                 <div class="card-top">
                   <h3 class="card-title">Soto Banjar</h3><span class="card-badge">Signature</span>
@@ -174,11 +161,9 @@
               </div>
             </article>
 
-            <!-- 3 -->
-            <article class="menu-card" id="menu-bubur-ayam">
-              <div class="card-image" style="background:linear-gradient(135deg,#ffb347,#d4762a)">
-                <span class="card-emoji">🥣</span>
-              </div>
+            <article class="menu-card" data-category="heavy" id="menu-bubur-ayam">
+              <div class="card-image" style="background:linear-gradient(135deg,#ffb347,#d4762a)"><span
+                  class="card-emoji">🥣</span></div>
               <div class="card-body">
                 <div class="card-top">
                   <h3 class="card-title">Bubur Ayam</h3><span class="card-badge">Bestseller</span>
@@ -190,11 +175,9 @@
               </div>
             </article>
 
-            <!-- 4 -->
-            <article class="menu-card" id="menu-bakmi-ayam">
-              <div class="card-image" style="background:linear-gradient(135deg,#e67c1b,#b5541a)">
-                <span class="card-emoji">🍜</span>
-              </div>
+            <article class="menu-card" data-category="heavy" id="menu-bakmi-ayam">
+              <div class="card-image" style="background:linear-gradient(135deg,#e67c1b,#b5541a)"><span
+                  class="card-emoji">🍜</span></div>
               <div class="card-body">
                 <div class="card-top">
                   <h3 class="card-title">Bakmi Ayam</h3><span class="card-badge">Favorite</span>
@@ -206,11 +189,9 @@
               </div>
             </article>
 
-            <!-- 5 -->
-            <article class="menu-card" id="menu-nasi-goreng">
-              <div class="card-image" style="background:linear-gradient(135deg,#e63946,#c1121f)">
-                <span class="card-emoji">🍳</span>
-              </div>
+            <article class="menu-card" data-category="heavy" id="menu-nasi-goreng">
+              <div class="card-image" style="background:linear-gradient(135deg,#e63946,#c1121f)"><span
+                  class="card-emoji">🍳</span></div>
               <div class="card-body">
                 <div class="card-top">
                   <h3 class="card-title">Nasi Goreng</h3><span class="card-badge">Special</span>
@@ -221,11 +202,9 @@
               </div>
             </article>
 
-            <!-- 6 -->
-            <article class="menu-card" id="menu-lontong-sayur">
-              <div class="card-image" style="background:linear-gradient(135deg,#52b788,#2d6a4f)">
-                <span class="card-emoji">🥗</span>
-              </div>
+            <article class="menu-card" data-category="heavy" id="menu-lontong-sayur">
+              <div class="card-image" style="background:linear-gradient(135deg,#52b788,#2d6a4f)"><span
+                  class="card-emoji">🥗</span></div>
               <div class="card-body">
                 <div class="card-top">
                   <h3 class="card-title">Lontong Sayur</h3><span class="card-badge">Local</span>
@@ -236,11 +215,9 @@
               </div>
             </article>
 
-            <!-- 7 -->
-            <article class="menu-card" id="menu-mie-goreng">
-              <div class="card-image" style="background:linear-gradient(135deg,#f4a261,#e76f51)">
-                <span class="card-emoji">🍝</span>
-              </div>
+            <article class="menu-card" data-category="heavy" id="menu-mie-goreng">
+              <div class="card-image" style="background:linear-gradient(135deg,#f4a261,#e76f51)"><span
+                  class="card-emoji">🍝</span></div>
               <div class="card-body">
                 <div class="card-top">
                   <h3 class="card-title">Mie Goreng</h3><span class="card-badge">Spicy</span>
@@ -251,11 +228,10 @@
               </div>
             </article>
 
-            <!-- 8 -->
-            <article class="menu-card" id="menu-ketoprak">
-              <div class="card-image" style="background:linear-gradient(135deg,#90e0ef,#0096c7)">
-                <span class="card-emoji">🥜</span>
-              </div>
+            <!-- ── SNACK ───────────────────────────── -->
+            <article class="menu-card" data-category="snack" id="menu-ketoprak">
+              <div class="card-image" style="background:linear-gradient(135deg,#90e0ef,#0096c7)"><span
+                  class="card-emoji">🥜</span></div>
               <div class="card-body">
                 <div class="card-top">
                   <h3 class="card-title">Ketoprak</h3><span class="card-badge">Vegan</span>
@@ -267,10 +243,77 @@
               </div>
             </article>
 
+            <article class="menu-card" data-category="snack" id="menu-pisang-goreng">
+              <div class="card-image" style="background:linear-gradient(135deg,#ffe066,#f3722c)"><span
+                  class="card-emoji">🍌</span></div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Pisang Goreng</h3><span class="card-badge">Crispy</span>
+                </div>
+                <p class="card-desc">Deep-fried banana fritters with a golden crispy batter, served warm.</p>
+                <div class="card-footer"><span class="card-price">Rp 10.000</span><span class="card-tag">✨ Crispy</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-category="snack" id="menu-gorengan">
+              <div class="card-image" style="background:linear-gradient(135deg,#c8a96e,#7c5c2e)"><span
+                  class="card-emoji">🧆</span></div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Gorengan Mix</h3><span class="card-badge">Assorted</span>
+                </div>
+                <p class="card-desc">Assorted Indonesian fritters — tahu goreng, tempe, bakwan, and ubi — served
+                  together.</p>
+                <div class="card-footer"><span class="card-price">Rp 12.000</span><span class="card-tag">🍟 Fried</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ── DRINK ───────────────────────────── -->
+            <article class="menu-card" data-category="drink" id="menu-es-teh">
+              <div class="card-image" style="background:linear-gradient(135deg,#90dbf4,#4cc9f0)"><span
+                  class="card-emoji">🧋</span></div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Es Teh Manis</h3><span class="card-badge">Segar</span>
+                </div>
+                <p class="card-desc">Cold sweet Indonesian tea served over ice — the perfect breakfast companion.</p>
+                <div class="card-footer"><span class="card-price">Rp 5.000</span><span class="card-tag">🧊 Cold</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-category="drink" id="menu-jus-alpukat">
+              <div class="card-image" style="background:linear-gradient(135deg,#95d5b2,#1b4332)"><span
+                  class="card-emoji">🥑</span></div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Jus Alpukat</h3><span class="card-badge">Fresh</span>
+                </div>
+                <p class="card-desc">Thick creamy avocado juice blended with condensed milk and a touch of chocolate.
+                </p>
+                <div class="card-footer"><span class="card-price">Rp 12.000</span><span class="card-tag">🍃
+                    Healthy</span></div>
+              </div>
+            </article>
+
+            <article class="menu-card" data-category="drink" id="menu-es-jeruk">
+              <div class="card-image" style="background:linear-gradient(135deg,#ffd166,#ef8c2c)"><span
+                  class="card-emoji">🍊</span></div>
+              <div class="card-body">
+                <div class="card-top">
+                  <h3 class="card-title">Es Jeruk</h3><span class="card-badge">Citrus</span>
+                </div>
+                <p class="card-desc">Freshly squeezed orange juice over ice — tangy, sweet, and refreshing.</p>
+                <div class="card-footer"><span class="card-price">Rp 8.000</span><span class="card-tag">🍋 Fresh</span>
+                </div>
+              </div>
+            </article>
+
           </div><!-- /menu-grid -->
         </div><!-- /menu-slider-viewport -->
 
-        <!-- Next button -->
         <button class="slider-btn slider-next" id="menuNext" aria-label="Next items">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
@@ -279,7 +322,6 @@
         </button>
       </div><!-- /menu-slider-wrap -->
 
-      <!-- Dot indicators -->
       <div class="slider-dots" id="sliderDots" role="group" aria-label="Menu page navigation"></div>
 
     </div>

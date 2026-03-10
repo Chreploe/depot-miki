@@ -591,6 +591,50 @@ button {
     background: var(--white);
 }
 
+/* ── Category filter tabs ── */
+.menu-filter-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .6rem;
+    margin-bottom: 2rem;
+}
+
+.filter-tab {
+    padding: .55rem 1.3rem;
+    border-radius: 50px;
+    border: 1.5px solid var(--orange-pale);
+    background: var(--white);
+    color: var(--text-mid);
+    font-size: .88rem;
+    font-weight: 500;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: border-color var(--transition), color var(--transition),
+        background var(--transition), box-shadow var(--transition),
+        transform var(--transition);
+}
+
+.filter-tab:hover {
+    border-color: var(--orange-primary);
+    color: var(--orange-primary);
+    background: var(--orange-pale);
+    transform: translateY(-1px);
+}
+
+.filter-tab.active {
+    background: linear-gradient(135deg, var(--orange-primary), var(--orange-light));
+    border-color: transparent;
+    color: var(--white);
+    box-shadow: 0 4px 14px rgba(232, 122, 42, .35);
+    transform: translateY(-1px);
+}
+
+/* Hidden cards (filtered out) */
+.menu-card.hidden {
+    display: none;
+}
+
 /* Outer row: [prev] [viewport] [next] */
 .menu-slider-wrap {
     display: flex;
